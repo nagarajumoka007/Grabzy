@@ -1,0 +1,77 @@
+{% extends 'user-base.html' %}
+
+{% load static %}
+
+{% block content %}
+        <main class="login-card-container">
+            <img src="{% static 'images/grabzy-logo-black.svg' %}" alt="" width= "150px" style="background: transparent;">
+            <form class="login-card js-form" method="POST">
+                {% csrf_token %}
+                <h2>Create account</h2>
+                <div class="input-box">
+                    <p class="bold-text login-small-text">Your name:</p>
+                    <!-- <input type="text" placeholder = "First and last name"> -->
+                    {{ u_form.first_name }}
+                    {% for error in u_form.first_name.errors %}
+                        <p class="form-errors">{{ error }}</p>
+                    {% endfor %}
+                    <!-- <button class="login-submit-button">Continue</button> -->
+                </div>
+                <div class="input-box">
+                    <p class="bold-text login-small-text">Mobile number:</p>
+                    <!-- <input type="text" placeholder = "Mobile number"> -->
+                    {{ u_form.mobile }}
+                    {% for error in u_form.mobile.errors %}
+                        <p class="form-errors">{{ error }}</p>
+                    {% endfor %}
+                    <!-- <button class="login-submit-button">Continue</button> -->
+                </div>
+                <div class="input-box">
+                    <p class="bold-text login-small-text">Email:</p>
+                    <!-- <input type="text" placeholder = "First and last name"> -->
+                    {{ u_form.email }}
+                    {% for error in u_form.email.errors %}
+                        <p class="form-errors">{{ error }}</p>
+                    {% endfor %}
+                    <!-- <button class="login-submit-button">Continue</button> -->
+                </div>
+                <div class="input-box">
+                    <p class="bold-text login-small-text">Password (at least 6 characters):</p>
+                    <!-- <input type="password"> -->
+                    {{ u_form.password1 }}
+                    {% for error in u_form.password1.errors %}
+                        <p class="form-errors">{{ error }}</p>
+                    {% endfor %}
+                    <!-- <button class="login-submit-button">Continue</button> -->
+                </div>
+                <div class="input-box">
+                    <!-- <input type="password"> -->
+                     <p class="bold-text login-small-text">Confirm Password:</p>
+                    {{ u_form.password2 }}
+                    {% for error in u_form.password2.errors %}
+                        <p class="form-errors">{{ error }}</p>
+                    {% endfor %}
+                    <!-- <button class="login-submit-button">Continue</button> -->
+                </div>
+                
+                <button type="submit" class="login-submit-button">Register</button>
+                <div class="horizontal-line"></div>
+                <div>
+                    <p id="p-heading">Already a customer?</p>
+                    <a href="#">Sign in instead</a>
+                </div>
+                <p class="small-9-px-text">By creating an account or logging in, you agree to Grabzy's <a href="">Consitions of use</a> and <a href="">Privacy policy</a>.</p>
+                
+            </form>
+            
+        </main>
+        <div class="horizontal-line"></div>
+        <footer class="login-footer">
+            <div>
+                <a href="">Condition of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Help</a>
+            </div>
+            <p>© 2025, Grabzy.com, Inc. or its affiliates</p>
+        </footer>
+    {% endblock %}

@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabzy</title>
+    <link href="{% static 'css/main.css' %}?v=2" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/grabzy-log.svg' %}">
+</head>
+<body>
+    <div class="login-container">
+        
+    </div>
+        {% block content %}
+        {% endblock %}
+    
+    <!-- <script>
+        console.log("tested")
+        const  eles = document.querySelectorAll(".js-form")
+        eles.forEach((ele) => {
+            console.log("element 1")
+            ele.addEventListener("submit", (e) => {
+                e.preventDefault();
+                let form = new FormData(e.target)
+                console.log(Object.fromEntries(form.entries()))
+                console.log("value ended")
+                console.log(JSON.stringify(Object.fromEntries(form.entries())))
+                console.log(document.cookie)
+            })
+        })
+    </script> -->
+    
+</body>
+</html>

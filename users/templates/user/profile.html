@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+    <main class="profile-main-container">
+        <div class="profile-container">
+        
+            <div class="profile">
+                <h3>Account Information</h3>
+                <div class="account-section">
+                    <img src="{{ user.user_profile.profile_pic.url }}" alt="" class="profile-image">
+                    <div>
+                        <p>{{ user.username }}</p>
+                        <p class="profile-email">{{ user.email }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="orders-container">
+                <p class="orders-container_heading">Your Orders ({{ orders|count }})</p>
+                {% for order in orders %}
+                    <div class="order">
+                        <img src="{{ order.product.image.url }}" alt="" class="order-image">
+                        <div class="order-content">
+                            <a href="#" class="order-item-heading">{{ order.product.name }}</a>
+                            <p class="text-1_2rem grey-text">{{ order.ordered_at|date:"M d, g:iA" }}</p>
+                            <div class="order-details-section">
+                                <div>
+                                    <p class="small-text">Order ID</p>
+                                    <p>{{ order.oid }}</p>
+                                </div>
+                                <!-- <span class="new-price">→</span> -->
+                                <div>
+                                    <p class="small-text">Price</p>
+                                    <p class="text-1_2rem new-price">₹{{ order.price }}</p>
+                                </div>
+                                <div>
+                                    <p class="small-text">Quantity</p>
+                                    <p class="text-1_2rem new-price">{{ order.quantity }}</p>
+                                </div>
+                                <!-- <p class="offer-percentage">13% OFF</p> -->
+                            </div>
+                            <p>Total Cost: {{ order.quantity|multiply:order.price|rupee }}</p>
+                            <div class="order-buttons-container">
+                                <a class="btn btn-primary" href="{% url 'product-detail' order.product.pid %}">View Product</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+        </div>
+        
+    </main>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'user-base.html' %}
+
+{% load static %}
+
+{% block content %}
+        <main class="login-card-container">
+            <img src="{% static 'images/grabzy-logo-black.svg' %}" alt="" width= "150px" style="background: transparent;">
+            <div class="login-card">
+                <p id="signin-large-text">Sign in or create account</p>
+                <form class="input-box js-form" method="POST">
+                    {% csrf_token %}
+                    <div class="input-box">
+                        <p class="bold-text login-small-text">Enter mobile number or email</p>
+                        <input type="text" name="user">
+                    </div>
+                    <div class="input-box">
+                        <p class="bold-text login-small-text">Password</p>
+                        <input type="password" name="pass">
+                    </div>
+                    {% if error %}
+                        <p class="form-errors">{{ error }}</p>
+                    {% endif %}
+                    <button type="submit"  class="login-submit-button">Continue</button>
+                </form>
+                <p class="login-small-text">By continuiung, you agree to Grabzy's <a href="" id="login-small-text" >Conditions of User</a> and <a href="" id="login-small-text">Privacy Notice</a>.</p>
+                <div class="horizontal-line"></div>
+                <p id="p-heading">New user? <a href="{% url 'register' %}">Register</a></p>
+                
+            </div>
+        </main>
+        <div class="horizontal-line"></div>
+        <footer class="login-footer">
+            <div>
+                <a href="">Condition of Use</a>
+                <a href="">Privacy Notice</a>
+                <a href="">Help</a>
+            </div>
+            <p>© 2025, Grabzy.com, Inc. or its affiliates</p>
+        </footer>
+{% endblock %}

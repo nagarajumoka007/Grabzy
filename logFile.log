@@ -1,0 +1,306 @@
+INFO 2025-11-06 09:52:48,549 This is first Log
+INFO 2025-11-06 09:52:48,549 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-06 09:56:20,395 This is first Log
+INFO 2025-11-06 09:56:20,395 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-06 09:56:36,576 This is first Log
+INFO 2025-11-06 09:56:36,576 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-18 11:01:31,413 This is first Log
+INFO 2025-11-18 11:01:31,413 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-18 11:02:36,940 This is first Log
+INFO 2025-11-18 11:02:36,941 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-18 11:02:46,417 This is first Log
+INFO 2025-11-18 11:02:46,418 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-18 11:25:39,409 This is first Log
+INFO 2025-11-18 11:25:39,420 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-18 11:25:59,292 This is first Log
+INFO 2025-11-18 11:25:59,292 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:21:06,478 This is first Log
+INFO 2025-11-19 10:21:06,478 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 10:21:07,967 This is first Log
+INFO 2025-11-19 10:21:07,967 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:21:38,439 This is first Log
+INFO 2025-11-19 10:21:38,440 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:32:51,638 This is first Log
+INFO 2025-11-19 10:32:51,639 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:33:12,544 This is first Log
+INFO 2025-11-19 10:33:12,544 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:35:55,233 This is first Log
+INFO 2025-11-19 10:35:55,233 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-19 10:42:33,729 This is first Log
+INFO 2025-11-19 10:42:33,729 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:49:12,671 This is first Log
+INFO 2025-11-19 10:49:12,671 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 10:49:40,557 This is first Log
+INFO 2025-11-19 10:49:40,557 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-19 10:50:25,388 This is first Log
+INFO 2025-11-19 10:50:25,389 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:50:58,354 This is first Log
+INFO 2025-11-19 10:50:58,354 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 10:51:42,456 This is first Log
+INFO 2025-11-19 10:51:42,457 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:52:10,798 This is first Log
+INFO 2025-11-19 10:52:10,798 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-19 10:52:22,877 This is first Log
+INFO 2025-11-19 10:52:22,878 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-19 10:53:00,574 This is first Log
+INFO 2025-11-19 10:53:00,575 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 10:53:11,165 This is first Log
+INFO 2025-11-19 10:53:11,166 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 10:54:00,606 This is first Log
+INFO 2025-11-19 10:54:00,606 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:54:36,161 This is first Log
+INFO 2025-11-19 10:54:36,161 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 10:54:47,874 This is first Log
+INFO 2025-11-19 10:54:47,874 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 10:54:56,822 This is first Log
+INFO 2025-11-19 10:54:56,822 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-19 10:56:05,084 This is first Log
+INFO 2025-11-19 10:56:05,085 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:56:30,127 This is first Log
+INFO 2025-11-19 10:56:30,128 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-19 10:56:45,219 This is first Log
+INFO 2025-11-19 10:56:45,219 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 10:56:52,742 This is first Log
+INFO 2025-11-19 10:56:52,743 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-19 10:57:33,491 This is first Log
+INFO 2025-11-19 10:57:33,491 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-19 10:58:10,589 This is first Log
+INFO 2025-11-19 10:58:10,589 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 10:59:12,309 This is first Log
+INFO 2025-11-19 10:59:12,310 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-19 10:59:42,424 This is first Log
+INFO 2025-11-19 10:59:42,425 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 11:01:50,157 This is first Log
+INFO 2025-11-19 11:01:50,157 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-19 11:02:44,737 This is first Log
+INFO 2025-11-19 11:02:44,737 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 11:04:38,402 This is first Log
+INFO 2025-11-19 11:04:38,403 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 11:05:00,641 This is first Log
+INFO 2025-11-19 11:05:00,641 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 11:05:43,873 This is first Log
+INFO 2025-11-19 11:05:43,874 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 11:45:34,945 This is first Log
+INFO 2025-11-19 11:45:34,950 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-19 12:00:43,094 This is first Log
+INFO 2025-11-19 12:00:43,095 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-19 12:00:54,455 This is first Log
+INFO 2025-11-19 12:00:54,455 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 12:02:56,822 This is first Log
+INFO 2025-11-19 12:02:56,823 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-19 12:05:23,421 This is first Log
+INFO 2025-11-19 12:05:23,422 <QuerySet [<Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:05:38,828 This is first Log
+INFO 2025-11-19 12:05:38,828 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-19 12:05:55,553 This is first Log
+INFO 2025-11-19 12:05:55,553 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 12:06:11,762 This is first Log
+INFO 2025-11-19 12:06:11,763 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:07:39,053 This is first Log
+INFO 2025-11-19 12:07:39,053 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:09:22,995 This is first Log
+INFO 2025-11-19 12:09:22,996 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:09:59,491 This is first Log
+INFO 2025-11-19 12:09:59,493 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-19 12:11:34,822 This is first Log
+INFO 2025-11-19 12:11:34,822 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 12:13:04,074 This is first Log
+INFO 2025-11-19 12:13:04,075 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:23:41,136 This is first Log
+INFO 2025-11-19 12:23:41,136 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:25:26,586 This is first Log
+INFO 2025-11-19 12:25:26,587 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:25:42,931 This is first Log
+INFO 2025-11-19 12:25:42,931 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-19 12:26:04,227 This is first Log
+INFO 2025-11-19 12:26:04,228 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 12:38:21,839 This is first Log
+INFO 2025-11-19 12:38:21,839 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 12:38:30,241 This is first Log
+INFO 2025-11-19 12:38:30,241 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 12:43:34,698 This is first Log
+INFO 2025-11-19 12:43:34,698 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-19 12:43:44,566 This is first Log
+INFO 2025-11-19 12:43:44,566 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 12:44:54,298 This is first Log
+INFO 2025-11-19 12:44:54,299 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 12:46:13,243 This is first Log
+INFO 2025-11-19 12:46:13,243 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-19 12:47:07,884 This is first Log
+INFO 2025-11-19 12:47:07,884 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-19 12:47:20,434 This is first Log
+INFO 2025-11-19 12:47:20,434 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-19 12:47:38,455 This is first Log
+INFO 2025-11-19 12:47:38,456 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-21 22:52:56,192 This is first Log
+INFO 2025-11-21 22:52:56,192 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-21 22:53:03,643 This is first Log
+INFO 2025-11-21 22:53:03,644 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-21 22:53:39,059 This is first Log
+INFO 2025-11-21 22:53:39,060 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-21 22:55:03,415 This is first Log
+INFO 2025-11-21 22:55:03,415 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-21 22:55:08,581 This is first Log
+INFO 2025-11-21 22:55:08,582 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-21 23:00:24,412 This is first Log
+INFO 2025-11-21 23:00:24,413 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-21 23:02:17,468 This is first Log
+INFO 2025-11-21 23:02:17,469 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-21 23:05:09,576 This is first Log
+INFO 2025-11-21 23:05:09,577 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-21 23:05:32,608 This is first Log
+INFO 2025-11-21 23:05:32,608 <QuerySet [<Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-21 23:19:42,693 This is first Log
+INFO 2025-11-21 23:19:42,695 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-21 23:20:38,786 This is first Log
+INFO 2025-11-21 23:20:38,787 <QuerySet [<Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-21 23:21:04,648 This is first Log
+INFO 2025-11-21 23:21:04,649 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-21 23:22:26,893 This is first Log
+INFO 2025-11-21 23:22:26,894 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-21 23:22:36,081 This is first Log
+INFO 2025-11-21 23:22:36,081 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-21 23:22:42,871 This is first Log
+INFO 2025-11-21 23:22:42,872 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-21 23:22:55,592 This is first Log
+INFO 2025-11-21 23:22:55,593 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-21 23:23:06,610 This is first Log
+INFO 2025-11-21 23:23:06,610 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-21 23:23:51,126 This is first Log
+INFO 2025-11-21 23:23:51,127 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-21 23:24:05,695 This is first Log
+INFO 2025-11-21 23:24:05,696 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-21 23:24:25,501 This is first Log
+INFO 2025-11-21 23:24:25,501 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 00:05:15,186 This is first Log
+INFO 2025-11-22 00:05:15,187 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-22 00:05:23,818 This is first Log
+INFO 2025-11-22 00:05:23,819 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-22 00:07:06,084 This is first Log
+INFO 2025-11-22 00:07:06,084 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-22 00:07:06,218 This is first Log
+INFO 2025-11-22 00:07:06,218 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-22 00:07:17,392 This is first Log
+INFO 2025-11-22 00:07:17,393 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-22 00:10:56,359 This is first Log
+INFO 2025-11-22 00:10:56,360 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-22 00:16:22,057 This is first Log
+INFO 2025-11-22 00:16:22,057 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 00:22:35,175 This is first Log
+INFO 2025-11-22 00:22:35,179 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 00:22:36,606 This is first Log
+INFO 2025-11-22 00:22:36,607 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 00:31:34,027 This is first Log
+INFO 2025-11-22 00:31:34,028 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-22 11:58:09,671 This is first Log
+INFO 2025-11-22 11:58:09,672 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 12:01:27,581 This is first Log
+INFO 2025-11-22 12:01:27,581 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 12:01:31,339 This is first Log
+INFO 2025-11-22 12:01:31,339 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 13:29:05,088 This is first Log
+INFO 2025-11-22 13:29:05,093 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 15:47:57,945 This is first Log
+INFO 2025-11-22 15:47:57,949 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-22 15:48:21,116 This is first Log
+INFO 2025-11-22 15:48:21,117 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-22 15:48:46,001 This is first Log
+INFO 2025-11-22 15:48:46,002 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-22 15:49:53,976 This is first Log
+INFO 2025-11-22 15:49:53,977 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-22 15:50:02,981 This is first Log
+INFO 2025-11-22 15:50:02,981 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-22 15:50:22,301 This is first Log
+INFO 2025-11-22 15:50:22,302 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-22 15:50:33,642 This is first Log
+INFO 2025-11-22 15:50:33,643 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-22 15:51:14,412 This is first Log
+INFO 2025-11-22 15:51:14,412 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 15:51:34,625 This is first Log
+INFO 2025-11-22 15:51:34,626 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 15:51:48,719 This is first Log
+INFO 2025-11-22 15:51:48,719 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 15:52:01,015 This is first Log
+INFO 2025-11-22 15:52:01,015 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 15:52:19,461 This is first Log
+INFO 2025-11-22 15:52:19,461 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 15:52:33,543 This is first Log
+INFO 2025-11-22 15:52:33,543 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-22 15:53:52,304 This is first Log
+INFO 2025-11-22 15:53:52,304 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 15:54:02,253 This is first Log
+INFO 2025-11-22 15:54:02,253 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 15:56:34,993 This is first Log
+INFO 2025-11-22 15:56:34,993 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-22 15:57:47,903 This is first Log
+INFO 2025-11-22 15:57:47,904 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 15:58:46,982 This is first Log
+INFO 2025-11-22 15:58:46,982 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-22 15:59:25,138 This is first Log
+INFO 2025-11-22 15:59:25,138 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 16:01:17,907 This is first Log
+INFO 2025-11-22 16:01:17,907 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 16:01:37,770 This is first Log
+INFO 2025-11-22 16:01:37,771 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-22 16:02:17,354 This is first Log
+INFO 2025-11-22 16:02:17,354 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-22 16:03:11,275 This is first Log
+INFO 2025-11-22 16:03:11,276 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 16:04:39,166 This is first Log
+INFO 2025-11-22 16:04:39,167 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 16:05:00,039 This is first Log
+INFO 2025-11-22 16:05:00,039 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>]>
+INFO 2025-11-22 16:06:58,950 This is first Log
+INFO 2025-11-22 16:06:58,950 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 16:07:15,637 This is first Log
+INFO 2025-11-22 16:07:15,637 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-22 16:07:37,252 This is first Log
+INFO 2025-11-22 16:07:37,252 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 16:07:49,725 This is first Log
+INFO 2025-11-22 16:07:49,726 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-22 16:08:19,238 This is first Log
+INFO 2025-11-22 16:08:19,238 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-22 16:08:37,701 This is first Log
+INFO 2025-11-22 16:08:37,701 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-22 16:09:21,714 This is first Log
+INFO 2025-11-22 16:09:21,714 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 16:25:13,005 This is first Log
+INFO 2025-11-22 16:25:13,005 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 16:25:20,107 This is first Log
+INFO 2025-11-22 16:25:20,107 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>]>
+INFO 2025-11-22 16:37:03,154 This is first Log
+INFO 2025-11-22 16:37:03,155 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-22 16:38:54,107 This is first Log
+INFO 2025-11-22 16:38:54,107 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 18:48:20,389 This is first Log
+INFO 2025-11-22 18:48:20,390 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 19:04:01,304 This is first Log
+INFO 2025-11-22 19:04:01,304 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-22 19:46:03,784 This is first Log
+INFO 2025-11-22 19:46:03,785 <QuerySet [<Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 19:46:11,261 This is first Log
+INFO 2025-11-22 19:46:11,262 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 19:49:24,728 This is first Log
+INFO 2025-11-22 19:49:24,729 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-22 19:51:28,805 This is first Log
+INFO 2025-11-22 19:51:28,805 <QuerySet [<Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 19:56:43,388 This is first Log
+INFO 2025-11-22 19:56:43,389 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-22 19:57:45,603 This is first Log
+INFO 2025-11-22 19:57:45,603 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-22 20:07:22,884 This is first Log
+INFO 2025-11-22 20:07:22,885 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 20:07:29,008 This is first Log
+INFO 2025-11-22 20:07:29,008 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-22 20:07:50,379 This is first Log
+INFO 2025-11-22 20:07:50,379 <QuerySet [<Category: Electronic Gadgets>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-22 20:08:30,883 This is first Log
+INFO 2025-11-22 20:08:30,884 <QuerySet [<Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 20:28:09,148 This is first Log
+INFO 2025-11-22 20:28:09,149 <QuerySet [<Category: Fashion>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-22 20:40:33,263 This is first Log
+INFO 2025-11-22 20:40:33,264 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Electronic Gadgets>]>
+INFO 2025-11-22 20:43:24,165 This is first Log
+INFO 2025-11-22 20:43:24,165 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-22 20:46:04,404 This is first Log
+INFO 2025-11-22 20:46:04,405 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>

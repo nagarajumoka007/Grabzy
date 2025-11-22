@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+<main class="product-container">
+    <div class="product-details">
+        <div class="product-images-section">
+            <!-- <div class="product-images-list">
+                <img src="../../media/images/products/ac-image.jpg" alt="" class="product-images-list_image">
+                <img src="../../media/images/products/ActionCamera.webp" alt="" class="product-images-list_image">
+                <img src="../../media/images/products/Apple iphone 13.webp" alt="" class="product-images-list_image">
+                <img src="../../media/images/products/boAt Airdopes 141.webp" alt="" class="product-images-list_image">
+            </div> -->
+            <div class="product-images-section_main-image-section">
+                <img src="{{ product.image.url }}" alt="" class="product-main-image">
+                <div class="product-button-section">
+                    {% if user.is_authenticated and product.pid in cart_products %}
+                        {% with user_cart|get:product.pid as cart_item %}
+                            <div class="js-add-to-cart-{{ product.pid }} cart-added-item-button"><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = {{ product.pid }} data-sub = "true">-</button><p class="item-quantity-{{ product.pid }}">{{ cart_item.quantity }}</p><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = {{ product.pid }} data-sub = "false">+</button></div>
+                        {% endwith %}
+                    {% else %}
+                        <div class="js-add-to-cart-{{ product.pid }}"><button class="btn add-to-cart-button js-update-quantity" data-product-id = {{ product.pid }} data-sub="false">Add to cart</button></div>
+                    {% endif %}
+                    <a href="{% url 'cart' %}" class="btn buy-now-button js-buy-now " data-product-id = {{ product.pid }}>Buy Now</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="product-details_content">
+            <h2 class="product-details_content_title">{{ product.name }}</h2>
+            <div class="product-price-section">
+                <p class="new-price">{{ product.price|rupee }}</p>
+                {% if product.old_price %}
+                    <p class="old-price">{{ product.old_price|rupee }}</p>
+                    <div class="offer-percentage">{{ product.get_offer_percentage }} OFF</div>
+                {% endif %}
+            </div>
+            {% if product.in_stock %}
+                <div class="in-stock">In Stock</div>
+            {% else %}
+                <div class="out-of-stock">Out Of Stock</div>
+            {% endif %}
+            <div class="product-rating-section">
+                <p>⭐⭐⭐⭐⭐</p>
+                <p><span>{{ product.rating }}</span> (2374)</p>
+            </div>
+            <hr>
+            <p class="product-info">{{ product.description }}</p>
+            <hr>
+            <div class="technical-spec-section">
+                <h2 class="technical-spec-section_title">Technical Specifications</h2>
+                <ul>
+                    {% for f in features %}
+                    <li class="technical-spec_feature"><p>{{ f.feature|truncatechars:50 }}</p><p>{{ f.feature_value|truncatechars:50 }}</p></li>
+                    <li><hr></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="related-products-section">
+        <h2 class="related-products-section_title">Related Products</h2>
+        <div class="related-products">
+            {% for product in related_products %}
+            <div class="item-card">
+                <a href="{% url 'product-detail' product.pid %}" class="item-card-image-container">
+                    <img class="item-card-image" src="{{ product.image.url }}" alt="">
+                </a>
+                <p class="item-card-vendor">{{ product.vendor }}</p>
+                <div class="item-card-content">
+                    <a href="{% url 'product-detail' product.pid %}">{{ product.name }}</a>
+                    <p class="price">{{ product.price|rupee }}</p>
+                    <p>⭐ 4.5 (3746)</p>
+                    <p>FREE delivery <strong>Fri, 22 Aug</strong></p>                
+                </div>
+                {% if user.is_authenticated and product.pid in cart_products %}
+                    {% with user_cart|get:product.pid as cart_item %}
+                        <div class="js-add-to-cart-{{ product.pid }} cart-added-item-button"><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = {{ product.pid }} data-sub = "true">-</button><p class="item-quantity-{{ product.pid }}">{{ cart_item.quantity }}</p><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = {{ product.pid }} data-sub = "false">+</button></div>
+                    {% endwith %}
+                {% else %}
+                <div class="js-add-to-cart-{{ product.pid }}"><button class="btn add-to-cart-button js-update-quantity" data-product-id = {{ product.pid }} data-sub="false">Add to cart</button></div>
+                {% endif %}
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    
+
+</main>
+{% endblock %}
