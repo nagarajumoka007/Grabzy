@@ -27,7 +27,7 @@ rating_validators = [
 class Category(models.Model):
     cid = ShortUUIDField(max_length=20, length=6, alphabet='abcde123456', prefix='cat', unique=True)
     title = models.CharField(max_length=150)
-    image = models.ImageField(upload_to='images/category', default='images/default.png')
+    image = models.ImageField(upload_to='category/', default='category/default.png')
     description = models.TextField()
 
     class Meta:
@@ -42,7 +42,7 @@ class Category(models.Model):
 class Vendor(models.Model):
     vid = ShortUUIDField(max_length=20, length=6, alphabet='abcde123456', prefix='ven', unique=True)
     title = models.CharField(max_length=150)
-    image = models.ImageField(upload_to='images/vendor', default = 'images/default.png')
+    image = models.ImageField(upload_to='vendors/', default = 'vendors/default.png')
     email = models.EmailField(unique=True, validators=[email_validator])
     mobile = models.CharField(validators=[mobile_validator])
     address = models.TextField()
@@ -62,7 +62,7 @@ class Product(models.Model):
     pid = ShortUUIDField(unique=True, max_length=20, length=6, alphabet='abcde123456', prefix='prd')
     name = models.CharField()
     description = models.TextField()
-    image = models.ImageField(upload_to="images/products", default='images/default.png')
+    image = models.ImageField(upload_to="products/", default='products/default.png')
     price = models.DecimalField(max_digits=999999999, decimal_places=2)
     old_price = models.DecimalField(max_digits=999999999, decimal_places=2, null=True, blank=True)
     rating = models.DecimalField(max_digits=3, decimal_places=2, validators=rating_validators, blank=True, null=True)
@@ -102,7 +102,7 @@ class Product(models.Model):
 
 class ProductImages(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='images/products')
+    image = models.ImageField(upload_to='products/')
 
 
 class ProductFeatures(models.Model):

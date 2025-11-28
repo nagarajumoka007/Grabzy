@@ -6,11 +6,11 @@ from django.contrib import messages
 from .models import Profile
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from cart.utils import add_cart_item, add_paramters_to_url
 from cart.models import Order
 from django.contrib.auth.decorators import login_required
-
+from django.shortcuts import get_object_or_404
 
 
 def loginView(request):
@@ -90,5 +90,26 @@ def register(request):
 
 @login_required 
 def profile(request):
-    orders = request.user.user_orders.all()
+    orders = request.user.user_orders.all().order_by("-ordered_at")
     return render(request, 'user/profile.html', {'orders': orders})
+
+def user_details(request, pk):
+    user = get_object_or_404(User, pk=pk)
+    if request.method == 'GET':
+        return JsonResponse({"username": user.username, "email": user.email, 'profile': user.user_profile.profile_pic.url})
+    elif request.method == 'POST':
+        try:
+            # Handle the errors for duplicate username and email update - Need to Update
+            username = request.POST.get("username")
+            email = request.POST.get("email")
+            profile = request.FILES.get("profile")
+            user.username = username
+            user.email=email
+            user.save()
+            if profile:
+                # Validate if the uploaded file is image or not - Need to Update
+                user.user_profile.profile_pic = profile
+                user.user_profile.save()
+            return JsonResponse({"username": user.username, "email": user.email, 'profile': user.user_profile.profile_pic.url})
+        except Exception as e:
+            print("Values of Exception is : ", e)

@@ -304,3 +304,139 @@ INFO 2025-11-22 20:43:24,165 This is first Log
 INFO 2025-11-22 20:43:24,165 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
 INFO 2025-11-22 20:46:04,404 This is first Log
 INFO 2025-11-22 20:46:04,405 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>]>
+INFO 2025-11-23 21:55:21,892 This is first Log
+INFO 2025-11-23 21:55:21,893 <QuerySet [<Category: Home Decorations>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-23 21:55:25,011 This is first Log
+INFO 2025-11-23 21:55:25,011 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-23 21:55:37,853 This is first Log
+INFO 2025-11-23 21:55:37,854 <QuerySet [<Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Fashion>, <Category: Home Decorations>]>
+INFO 2025-11-23 21:57:25,284 This is first Log
+INFO 2025-11-23 21:57:25,285 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>]>
+INFO 2025-11-23 22:15:10,792 This is first Log
+INFO 2025-11-23 22:15:10,793 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-23 22:15:31,152 This is first Log
+INFO 2025-11-23 22:15:31,153 <QuerySet [<Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-23 22:16:14,891 This is first Log
+INFO 2025-11-23 22:16:14,893 <QuerySet [<Category: Electronic Gadgets>, <Category: Fashion>, <Category: Bike Accessories>, <Category: Home Decorations>]>
+INFO 2025-11-23 22:16:21,981 This is first Log
+INFO 2025-11-23 22:16:21,981 <QuerySet [<Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Home Decorations>, <Category: Fashion>]>
+INFO 2025-11-23 22:20:59,123 This is first Log
+INFO 2025-11-23 22:20:59,123 <QuerySet [<Category: Home Decorations>, <Category: Bike Accessories>, <Category: Fashion>, <Category: Electronic Gadgets>]>
+INFO 2025-11-23 22:23:27,945 This is first Log
+INFO 2025-11-23 22:23:27,946 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-23 22:29:43,300 This is first Log
+INFO 2025-11-23 22:29:43,301 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-23 22:29:46,205 This is first Log
+INFO 2025-11-23 22:29:46,206 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-23 22:38:01,987 This is first Log
+INFO 2025-11-23 22:38:01,988 <QuerySet [<Category: Fashion>, <Category: Bike Accessories>, <Category: Electronic Gadgets>, <Category: Home Decorations>]>
+INFO 2025-11-23 22:39:16,447 This is first Log
+INFO 2025-11-23 22:39:16,447 <QuerySet [<Category: Fashion>, <Category: Home Decorations>, <Category: Bike Accessories>, <Category: Electronic Gadgets>]>
+INFO 2025-11-23 22:43:23,227 This is first Log
+INFO 2025-11-23 22:43:23,227 <QuerySet [<Category: Home Decorations>, <Category: Electronic Gadgets>, <Category: Bike Accessories>, <Category: Fashion>]>
+INFO 2025-11-23 22:53:42,720 This is first Log
+INFO 2025-11-23 22:54:41,637 This is first Log
+INFO 2025-11-23 22:54:57,663 This is first Log
+INFO 2025-11-23 22:55:01,166 This is first Log
+INFO 2025-11-23 22:56:35,412 This is first Log
+INFO 2025-11-23 22:57:53,868 This is first Log
+INFO 2025-11-23 23:03:11,274 This is first Log
+INFO 2025-11-23 23:05:23,733 This is first Log
+INFO 2025-11-23 23:05:50,722 This is first Log
+INFO 2025-11-23 23:05:53,678 This is first Log
+INFO 2025-11-23 23:05:55,232 This is first Log
+INFO 2025-11-23 23:06:25,988 This is first Log
+INFO 2025-11-23 23:07:42,387 This is first Log
+INFO 2025-11-23 23:07:44,215 This is first Log
+INFO 2025-11-23 23:08:12,305 This is first Log
+INFO 2025-11-23 23:08:28,752 This is first Log
+INFO 2025-11-23 23:08:47,830 This is first Log
+INFO 2025-11-23 23:09:44,398 This is first Log
+INFO 2025-11-23 23:09:51,131 This is first Log
+INFO 2025-11-23 23:12:52,377 This is first Log
+INFO 2025-11-23 23:15:45,089 This is first Log
+INFO 2025-11-23 23:16:31,515 This is first Log
+INFO 2025-11-23 23:16:36,014 This is first Log
+INFO 2025-11-23 23:16:51,897 This is first Log
+INFO 2025-11-23 23:16:59,088 This is first Log
+INFO 2025-11-23 23:17:04,635 This is first Log
+INFO 2025-11-23 23:17:47,674 This is first Log
+INFO 2025-11-23 23:19:54,100 This is first Log
+INFO 2025-11-23 23:20:06,765 This is first Log
+INFO 2025-11-23 23:20:42,063 This is first Log
+INFO 2025-11-23 23:21:43,529 This is first Log
+INFO 2025-11-23 23:33:33,815 This is first Log
+INFO 2025-11-23 23:33:39,649 This is first Log
+INFO 2025-11-23 23:33:52,049 This is first Log
+INFO 2025-11-23 23:40:47,341 This is first Log
+INFO 2025-11-25 11:14:17,802 This is first Log
+INFO 2025-11-25 11:23:13,955 This is first Log
+INFO 2025-11-25 11:23:32,991 This is first Log
+INFO 2025-11-25 11:26:01,454 This is first Log
+INFO 2025-11-25 11:27:05,065 This is first Log
+INFO 2025-11-25 11:53:40,433 This is first Log
+INFO 2025-11-25 11:54:18,555 This is first Log
+INFO 2025-11-25 12:07:11,007 This is first Log
+INFO 2025-11-25 12:08:17,033 This is first Log
+INFO 2025-11-25 12:09:11,425 This is first Log
+INFO 2025-11-25 12:30:28,842 This is first Log
+INFO 2025-11-25 12:30:38,210 This is first Log
+INFO 2025-11-25 12:30:43,357 This is first Log
+INFO 2025-11-25 12:30:50,007 This is first Log
+INFO 2025-11-25 12:30:57,110 This is first Log
+INFO 2025-11-25 12:31:27,276 This is first Log
+INFO 2025-11-25 12:31:56,060 This is first Log
+INFO 2025-11-25 12:34:27,047 This is first Log
+INFO 2025-11-25 12:35:14,377 This is first Log
+INFO 2025-11-25 12:37:27,382 This is first Log
+INFO 2025-11-25 19:56:54,448 This is first Log
+INFO 2025-11-25 19:57:55,071 This is first Log
+INFO 2025-11-26 09:59:58,287 This is first Log
+INFO 2025-11-26 10:00:10,194 This is first Log
+INFO 2025-11-26 10:31:14,995 This is first Log
+INFO 2025-11-28 09:29:56,500 This is first Log
+INFO 2025-11-28 11:53:25,402 This is first Log
+INFO 2025-11-28 11:53:28,789 This is first Log
+INFO 2025-11-28 11:54:43,438 This is first Log
+INFO 2025-11-28 11:54:45,897 This is first Log
+INFO 2025-11-28 11:56:08,469 This is first Log
+INFO 2025-11-28 12:01:07,022 This is first Log
+INFO 2025-11-28 12:01:59,876 This is first Log
+INFO 2025-11-28 12:02:23,391 This is first Log
+INFO 2025-11-28 12:02:34,943 This is first Log
+INFO 2025-11-28 12:04:29,308 This is first Log
+INFO 2025-11-28 12:04:56,329 This is first Log
+INFO 2025-11-28 12:05:28,875 This is first Log
+INFO 2025-11-28 12:06:20,994 This is first Log
+INFO 2025-11-28 12:07:51,840 This is first Log
+INFO 2025-11-28 12:11:07,032 This is first Log
+INFO 2025-11-28 12:11:32,999 This is first Log
+INFO 2025-11-28 12:12:27,514 This is first Log
+INFO 2025-11-28 12:13:05,581 This is first Log
+INFO 2025-11-28 12:13:20,127 This is first Log
+INFO 2025-11-28 12:16:31,587 This is first Log
+INFO 2025-11-28 12:16:43,938 This is first Log
+INFO 2025-11-28 12:17:09,488 This is first Log
+INFO 2025-11-28 12:18:27,492 This is first Log
+INFO 2025-11-28 12:19:26,665 This is first Log
+INFO 2025-11-28 12:19:43,942 This is first Log
+INFO 2025-11-28 12:19:49,417 This is first Log
+INFO 2025-11-28 12:20:09,302 This is first Log
+INFO 2025-11-28 12:20:23,592 This is first Log
+INFO 2025-11-28 12:21:21,664 This is first Log
+INFO 2025-11-28 12:22:04,726 This is first Log
+INFO 2025-11-28 12:22:28,663 This is first Log
+INFO 2025-11-28 12:23:36,154 This is first Log
+INFO 2025-11-28 12:24:00,452 This is first Log
+INFO 2025-11-28 12:28:14,022 This is first Log
+INFO 2025-11-28 12:28:24,167 This is first Log
+INFO 2025-11-28 12:28:31,727 This is first Log
+INFO 2025-11-28 12:28:49,252 This is first Log
+INFO 2025-11-28 12:31:29,805 This is first Log
+INFO 2025-11-28 12:31:44,138 This is first Log
+INFO 2025-11-28 12:32:05,492 This is first Log
+INFO 2025-11-28 12:32:11,751 This is first Log
+INFO 2025-11-28 12:32:17,276 This is first Log
+INFO 2025-11-28 12:32:22,666 This is first Log
+INFO 2025-11-28 12:32:28,013 This is first Log
+INFO 2025-11-28 12:32:49,248 This is first Log

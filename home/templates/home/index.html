@@ -14,31 +14,18 @@
                     <h2 class = "offers-div_heading">Redefining the Way You <span class="highlighted-text">Shop</span> Online.</h2>
                 </div>
                 
-                <!-- <img class= "home-offers-button" src="{% static 'images/chevron-back-outline.svg' %}" alt=""> -->
-                <!-- <a class="offers-link" href="#"></a> -->
-                <!-- <img class= "home-offers-button" src="{% static 'images/chevron-forward-outline.svg' %}" alt=""> -->
             </div>
             
             <div class="category-section">
                 <h2 class="category-section_title">Shop by Category</h2>
                 <p class="category-section_text">Find exactly what you're looking for</p>
                 <div class="category-cards-section">
-                    <a href="{% url 'category-products' 'Electronic Gadgets' %}" class="category-card">
-                        <img src="{% static 'images/electronics.jpg' %}" alt="" class="category-image">
-                        <h4 class="category-card_title">Electronic Gadgets</h4>
+                    {% for category in catrgories %}
+                    <a href="{% url 'category-products' category.title %}" class="category-card">
+                        <img src="{{ category.image.url }}" alt="{{ catrgory.title }}-image" class="category-image">
+                        <h4 class="category-card_title">{{ category.title }}</h4>
                     </a>
-                    <a href="{% url 'category-products' 'Fashion' %}" class="category-card">
-                        <img src="{% static 'images/fashion-card-image.jpg' %}" alt="" class="category-image">
-                        <h4 class="category-card_title">Fashion</h4>
-                    </a>
-                    <a href="{% url 'category-products' 'Home Decorations' %}" class="category-card">
-                        <img src="{% static 'images/home-card-image.jpg' %}" alt="" class="category-image">
-                        <h4 class="category-card_title">Home Decorations</h4>
-                    </a>
-                    <a href="{% url 'category-products' 'Bike Accessories' %}" class="category-card">
-                        <img src="{% static 'images/bike-card-image.jpg' %}" alt="" class="category-image">
-                        <h4 class="category-card_title">Bike Accessories</h4>
-                    </a>
+                    {% endfor %}
                 </div>
             </div>
          
@@ -48,26 +35,9 @@
 
                 <div class="scrollabale-items-grid">
                     {% for prod in popular_products %}
-                    <div class="item-card">
-                        <a href = "{% url 'product-detail' prod.pid %}" class="item-card-image-container">
-                            <img class="item-card-image" src="{{ prod.image.url }}" alt="">
-                        </a>
-                        <p class="item-card-vendor">{{ prod.vendor }}</p>
-                        <div class="item-card-content">
-                            <a href="{% url 'product-detail' prod.pid %}">{{ prod.name }}</a>
-                            <p class="price">{{ prod.price|rupee }}</p>
-                            <p>⭐ 4.5 (3746)</p>
-                            <p>FREE delivery <strong>Fri, 22 Aug</strong></p>
-                            {% if user.is_authenticated and prod.pid in cart_products %}
-                                {% with user_cart|get:prod.pid as cart_item %}
-                                    <div class="js-add-to-cart-{{ prod.pid }} cart-added-item-button"><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = {{ prod.pid }} data-sub = "true">-</button><p class="item-quantity-{{ prod.pid }}">{{ cart_item.quantity }}</p><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = {{ prod.pid }} data-sub = "false">+</button></div>
-                                {% endwith %}
-                            {% else %}
-                            <div class="js-add-to-cart-{{ prod.pid }}"><button class="btn add-to-cart-button js-update-quantity" data-product-id = {{ prod.pid }} data-sub="false">Add to cart</button></div>
-                            {% endif %}
-                        </div>
-                        <!-- <div class="js-add-to-cart add-to-cart-{{ p.pid }}"><button class="add-to-cart-button js-update-quantity" data-product-id = {{ p.pid }} data-sub="false">Add to cart</button></div> -->
-                    </div>
+                        
+                        {% include 'home/includes/prod_card.html' with prod=prod cart_products=cart_products %}
+ 
                     {% endfor %}
 
                 </div>
@@ -75,25 +45,10 @@
                 
             </div>
 
-            <!-- <div class="home-card">
-                {% for cat, prod in data.items %}
-                <div class="home-card-inner-div">
-                    <h2>{{ cat.description }}</h2>
-                    <div class="home-card-grid" data-category = "{{ cat.description }}">
-                        {% for p in prod %}
-                        <a href = "#" class="grid-item">
-                            <img class="home-card-items-image" src="{{ p.image.url }}" alt="">
-                            <p>{{ p.name|truncatechars:35 }}</p>
-                        </a>
-                        {% endfor %}
-                        
-                    </div>
-                    <a href="#" class="see-more-option">See more</a>
-                </div>
-                {% endfor %}
-
-            </div> -->
-
         </div>
 
+{% endblock %}
+
+{% block scripts %}
+        <script type="module" src="{% static 'home/js/home.js' %}"></script>
 {% endblock %}

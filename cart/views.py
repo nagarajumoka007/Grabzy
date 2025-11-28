@@ -17,7 +17,6 @@ def add_to_cart(request):
         data = json.loads(request.body)
         pid = data.get('pid')
         sub = data.get('sub')
-        print("Inside pid value", pid)
         cart_item_details = add_cart_item(request.user, pid, sub)
         return JsonResponse({"message": "Successful", "cart_count": request.user.user_cart.count(), 'productQuantity': cart_item_details.get('quantity'), 'productPID': cart_item_details.get('pid')})
     return Http404
@@ -25,8 +24,15 @@ def add_to_cart(request):
 # @login_required(login_url='/users/login/')
 @login_required
 def cart(request):
-    cart_items = request.user.user_cart.all()
-    return render(request, 'cart/cart.html', {'cart_items': cart_items})
+    cart_items = request.user.user_cart.all().select_related('product')
+    items_count = len(cart_items)
+    total_amount = sum(map(lambda x: x.product.price * x.quantity, cart_items))
+    context = {
+        'cart_items': cart_items,
+        'items_count': items_count,
+        'total_amount': total_amount
+    }
+    return render(request, 'cart/cart.html', context)
 
 def cart_details(request):
     cart_count = request.user.user_cart.count()
@@ -51,16 +57,14 @@ def orders(request):
         for cart_item in cart_items:
             Order.objects.create(user=request.user, product = cart_item.product, price=cart_item.product.price, quantity=cart_item.quantity)
         cart_items.delete()
-        return redirect('cart')
+        return redirect('profile')
     else:
         return Http404
 
 def buy_now(request, pid):
     product = get_object_or_404(Product, pid=pid)
-    print("hello")
     try:
         cart_item = request.user.user_cart.get(product=product)
-        print(cart_item)
     except Cart.DoesNotExist:
         Cart.objects.create(user=request.user, product=product)
         cart_count = len(request.user.user_cart.all())

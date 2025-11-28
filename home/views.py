@@ -12,27 +12,27 @@ from django.db.models import Count
 from cart.models import Order
 
 def home(request):
-    data = {}
     categories = Category.objects.all().order_by('?')
     popular_products = Product.objects.annotate(total_views = Count('productviews')).filter(total_views__gte = 1).order_by('-total_views')[0:10]
     logger = logging.getLogger(__name__)
     print(logger, __name__)
     logger.info("This is first Log")
-    logger.info(categories)
-    for cat in categories:
-        prod = Product.objects.filter(category = cat).order_by('?')[:4]
-        data[cat] = prod
+    # for cat in categories:
+    #     prod = Product.objects.filter(category = cat).order_by('?')[:4]
+    #     data[cat] = prod
     context = {
-        "data" : data,
+        # "data" : data,
         "popular_products": popular_products,
+        'catrgories': categories
     }
     
     if request.user.is_authenticated:
         cart_products = [item.product.pid for item in request.user.user_cart.all()]
         context = {
-        "data" : data,
+        # "data" : data,
         "popular_products": popular_products,
-        'cart_products': cart_products
+        'cart_products': cart_products,
+        'catrgories': categories
         }
 
     return render(request, 'home/index.html', context)

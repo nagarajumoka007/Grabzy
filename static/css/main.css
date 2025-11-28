@@ -358,9 +358,12 @@ ul li{
 .category-cards-section{
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
-    gap: 10px;
+    gap: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 .category-card{
@@ -373,6 +376,7 @@ ul li{
     border-radius: 4px;
     overflow: hidden;
     transition: 1s ease;
+    flex-shrink: 0
     
 }
 
@@ -532,23 +536,22 @@ ul li{
 .social-media-links{
     display: flex;
     gap: 50px;
-
+    height: 40px;
 }
 
 .social-media-icon{
     width: 25px;
-    transition: 1s;
+    transition: 0.6s;
 }
 
 .social-media-icon:hover{
-    width: 30px;
+    transform: scale(1.1);
 }
 
 .footer-small-text{
     font-size: 1.0rem;
     color: white;
 }
-
 
 /* -------------Choose-items----------------------*/
 
@@ -771,6 +774,9 @@ ul li{
 .link-text-cart{
     cursor: pointer;
     color: #007185;
+    outline: none;
+    border: none;
+    background-color: white;
 }
 
 .link-text-cart:hover, .link-text-cart:active{
@@ -1104,10 +1110,15 @@ a.btn, button.btn{
     padding: 6px 12px;
     min-width: 10rem;
     border-radius: 4rem;
-    background-color: #1E293B;
+    background-color: #384354;
     border: none;
     width: 100%;
     max-width: 30rem;
+}
+
+.proceed-button:hover, .proceed-button:active{
+    cursor: pointer;
+    background-color: #1E293B;
 }
 
 .cart-dynamic-button{
@@ -1235,6 +1246,7 @@ a.btn, button.btn{
     padding: 20px;
     border-radius: 20px;
     background-color: white;
+    position: relative;
 }
 
 .account-section{
@@ -1244,9 +1256,116 @@ a.btn, button.btn{
     gap: 15px;
 }
 
-.profile-image{
+.edit-information-button{
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    background-color: #384354;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.edit-information-button:hover, .edit-information-button:active{
+    background-color: #1E293B;
+    cursor: pointer;
+}
+
+.cancel-information-button{
+    width: 80px;
+    color: #384354;
+    position: absolute;
+    right: 120px;
+    top: 25px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #1E293B;
+    transition: 1s ease;
+}
+
+.cancel-information-button:hover, .cancel-information-button:active{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.save-information-button{
+    width: 80px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    background-color: #384354;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #1E293B;
+    transition: 1s ease;
+}
+
+.save-information-button:hover, .save-information-button:active{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.profile-image-container{
     width: 8rem;
     height: 8rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-upload-button{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    top: 75%;
+    left: 75%;
+}
+
+.image-upload-button:hover, .image-upload-button:active{
+    cursor: pointer;
+}
+
+.image-upload-input{
+    display: none;
+}
+
+.account-information-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.username-label{
+    display: inline-block;
+    font-size: 1.4rem;
+    width: 80px;
+}
+
+.email-label{
+    display: inline-block;
+    font-size: 1.4rem;
+    width: 80px;
+}
+
+#id-username{
+    width: 200px;
+    height: 24px;
+    padding: 2px 4px;
+}
+
+#id-email{
+    width: 200px;
+    height: 24px;
+    padding: 2px 4px;
+}
+
+.profile-image{
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 

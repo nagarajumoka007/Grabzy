@@ -1,0 +1,22 @@
+{% load custom_filters %}
+
+<div class="item-card">
+    <a href = "{% url 'product-detail' prod.pid %}" class="item-card-image-container">
+        <img class="item-card-image" src="{{ prod.image.url }}" alt="">
+    </a>
+    <p class="item-card-vendor">{{ prod.vendor }}</p>
+    <div class="item-card-content">
+        <a href="{% url 'product-detail' prod.pid %}">{{ prod.name }}</a>
+        <p class="price">{{ prod.price|rupee }}</p>
+        <p>⭐ {{ prod.rating|floatformat:"-1" }} (3746)</p>
+        <p>FREE delivery <strong>Fri, 22 Aug</strong></p>
+        {% if user.is_authenticated and prod.pid in cart_products %}
+            {% with user_cart|get:prod.pid as cart_item %}
+                <div class="js-add-to-cart-{{ prod.pid }} cart-added-item-button"><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = "{{ prod.pid }}" data-sub = "true">-</button><p class="item-quantity-{{ prod.pid }}">{{ cart_item.quantity }}</p><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = "{{ prod.pid }}" data-sub = "false">+</button></div>
+            {% endwith %}
+        {% else %}
+        <div class="js-add-to-cart-{{ prod.pid }}"><button class="btn add-to-cart-button js-update-quantity" data-product-id = "{{ prod.pid }}" data-sub="false">Add to cart</button></div>
+        {% endif %}
+    </div>
+
+</div>
