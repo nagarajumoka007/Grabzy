@@ -60,17 +60,17 @@ class Vendor(models.Model):
 
 class Product(models.Model):
     pid = ShortUUIDField(unique=True, max_length=20, length=6, alphabet='abcde123456', prefix='prd')
-    name = models.CharField()
+    name = models.CharField(max_length=150)
     description = models.TextField()
     image = models.ImageField(upload_to="products/", default='products/default.png')
-    price = models.DecimalField(max_digits=999999999, decimal_places=2)
-    old_price = models.DecimalField(max_digits=999999999, decimal_places=2, null=True, blank=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    old_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     rating = models.DecimalField(max_digits=3, decimal_places=2, validators=rating_validators, blank=True, null=True)
     in_stock = models.BooleanField(default=True)
     vendor = models.ForeignKey(Vendor, on_delete=models.CASCADE, default=1)
     category = models.ForeignKey(Category, related_name="category_product", on_delete=models.SET_NULL, null=True, blank=True)
     slug = models.SlugField(max_length = 300, unique=True, null=True, blank=True)
-    tags = TaggableManager(blank=None)
+    tags = TaggableManager(blank=True)
     
     # class Meta:
     #     verbose_name_plural = 'Products'
@@ -79,10 +79,10 @@ class Product(models.Model):
         return self.name if len(self.name) < 30 else self.name[0:30] + '...'
     
     def get_product_image(self):
-        return mark_safe(f"<img src={self.image.url} alt='product image' width='50', height = '50'>")
+        return mark_safe(f"<img src='{self.image.url}' alt='product image' width='50', height = '50'>")
     
     def get_offer_percentage(self):
-        percentage = (self.old_price - self.price)// self.old_price
+        percentage = ((self.old_price - self.price) / self.old_price) * 100
         print(percentage)
         return f"{percentage}%"
 
@@ -92,9 +92,9 @@ class Product(models.Model):
 
         try:
             OldProduct = Product.objects.get(pid = self.pid)
-            if OldProduct.image.url != self.image.url and self.image.url:
-                if os.path.isfile(OldProduct.image.url):
-                    os.remove(OldProduct.image.url)
+            if OldProduct.image.path != self.image.path and self.image.url:
+                if os.path.isfile(OldProduct.image.path):
+                    os.remove(OldProduct.image.path)
         except Product.DoesNotExist:
             pass
 

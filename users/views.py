@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 
 
-def loginView(request):
+def login_view(request):
     login_user = None
     if request.method == "POST":
         user = request.POST.get('user')
@@ -27,7 +27,6 @@ def loginView(request):
             except User.DoesNotExist:
                 raise Http404
             login_user = authenticate(request, username = email_user.username, password=password)
-        print("authenticated")
         if login_user is not None:
             login(request, login_user)
             # url = '/search/'
@@ -47,7 +46,6 @@ def loginView(request):
                 url = add_paramters_to_url(next_url, {'search': search})
                 add_cart_item(login_user, pid, sub)
                 # redirect('')
-                print("redirect", url)
                 return redirect(url)
             # print(request.GET.get('next'))
             if request.GET.get('next') is not None:
@@ -78,14 +76,11 @@ def register(request):
             profile = Profile.objects.get(user=instance)
             profile.mobile = u_form.cleaned_data.get('mobile')
             profile.save()
-            print(instance)
-            print("Cleaned Data",  u_form.cleaned_data)
             return redirect("user-login")
         else:
             return render(request, 'user/register.html', {'u_form': u_form})
         
     else:
-        print("Get Method")
         return render(request, 'user/register.html', {'u_form': u_form})
 
 @login_required 

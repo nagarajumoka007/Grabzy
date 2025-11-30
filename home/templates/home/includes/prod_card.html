@@ -8,8 +8,8 @@
     <div class="item-card-content">
         <a href="{% url 'product-detail' prod.pid %}">{{ prod.name }}</a>
         <p class="price">{{ prod.price|rupee }}</p>
-        <p>⭐ {{ prod.rating|floatformat:"-1" }} (3746)</p>
-        <p>FREE delivery <strong>Fri, 22 Aug</strong></p>
+        <p class="item-card-review">⭐ {{ prod.rating|floatformat:"-1" }} • 236 reviews</p>
+        <p class="item-card-delivery">FREE delivery <strong>Fri, 22 Aug</strong></p>
         {% if user.is_authenticated and prod.pid in cart_products %}
             {% with user_cart|get:prod.pid as cart_item %}
                 <div class="js-add-to-cart-{{ prod.pid }} cart-added-item-button"><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = "{{ prod.pid }}" data-sub = "true">-</button><p class="item-quantity-{{ prod.pid }}">{{ cart_item.quantity }}</p><button class="js-update-quantity update-quantity-button" style="font-size: 12px; font-weight: bold" data-product-id = "{{ prod.pid }}" data-sub = "false">+</button></div>

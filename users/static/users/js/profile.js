@@ -1,4 +1,6 @@
-import { makeAPICall, getCookies } from "../../../../static/JavaScript/utils.js"
+import { makeAPICall,
+     getCookies,
+     handleEmptySearch } from "../../../../static/JavaScript/utils.js"
 
 const profileContainerElement = document.querySelector(".profile-main-container")
 profileContainerElement.addEventListener('click', async (e) => {
@@ -12,7 +14,7 @@ profileContainerElement.addEventListener('click', async (e) => {
 
         const profileElement = document.querySelector(".profile")
         profileElement.innerHTML = `
-            <h3>Account Information</h3>
+            <h4 class="profile_title">Account Information</h4>
                 <form method="POST" enctype="multipart/form-data" action="" id="profile-update-form">
                     <button class="save-information-button js-save-information-button" type="submit">Save</button>
                     <button class="cancel-information-button js-cancel-information-button">Cancel</button>
@@ -47,7 +49,7 @@ profileContainerElement.addEventListener('click', async (e) => {
         if(cancelButtonElement){
             cancelButtonElement.addEventListener("click", () => {
                 profileElement.innerHTML = `
-                <h3>Account Information</h3>
+                <h4 class="profile_title">Account Information</h4>
                 <button class="edit-information-button js-edit-information-button" data-user-pk = "${userId}">Edit Information</button>
                 <div class="account-section">
                     <div class="profile-image-container">
@@ -91,7 +93,7 @@ profileContainerElement.addEventListener('click', async (e) => {
                 console.log(profileUpdateData)
 
                 profileElement.innerHTML = `
-                <h3>Account Information</h3>
+                <h4 class="profile_title">Account Information</h4>
                 <button class="edit-information-button js-edit-information-button" data-user-pk = "${userId}">Edit Information</button>
                 <div class="account-section">
                     <div class="profile-image-container">
@@ -113,3 +115,5 @@ profileContainerElement.addEventListener('click', async (e) => {
  
     }
 })
+
+handleEmptySearch()

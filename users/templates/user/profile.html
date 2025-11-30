@@ -7,7 +7,7 @@
         <div class="profile-container">
         
             <div class="profile">
-                <h3>Account Information</h3>
+                <h4 class="profile_title">Account Information</h4>
                 <button class="edit-information-button js-edit-information-button" data-user-pk = "{{ user.pk }}">Edit Information</button>
                 <div class="account-section">
                     <div class="profile-image-container">
@@ -20,13 +20,14 @@
                 </div>
             </div>
 
+            {% if orders %}
             <div class="orders-container">
-                <p class="orders-container_heading">Your Orders ({{ orders|count }})</p>
+                <h4 class="orders-container_heading">Your Orders ({{ orders|count }})</h4>
                 {% for order in orders %}
                     <div class="order">
                         <img src="{{ order.product.image.url }}" alt="" class="order-image">
                         <div class="order-content">
-                            <a href="#" class="order-item-heading">{{ order.product.name }}</a>
+                            <p class="order-item-heading">{{ order.product.name }}</p>
                             <p class="text-1_2rem grey-text">{{ order.ordered_at|date:"M d, g:iA" }}</p>
                             <div class="order-details-section">
                                 <div>
@@ -51,6 +52,12 @@
                         </div>
                     </div>
                 {% endfor %}
+            </div>
+            {% else %}
+            <div class="no-orders-container">
+                You have no orders yet...
+            </div>
+            {% endif %}
 
         </div>
         

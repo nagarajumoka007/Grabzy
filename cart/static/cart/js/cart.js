@@ -1,4 +1,8 @@
-import { updateCartItemsCount, updateCartQuantity, makeAPICall } from "../../../../static/JavaScript/utils.js"
+import { updateCartItemsCount, 
+    updateCartQuantity, 
+    makeAPICall, 
+    getCookies,
+    handleEmptySearch } from "../../../../static/JavaScript/utils.js"
 
 function updateCartDynamicButton(data){
     if(!data) return;
@@ -37,35 +41,43 @@ async function updateSubTotalInPayment(){
 
 
 const cartElement = document.querySelector(".cart-content")
-cartElement.addEventListener('click', async (event) => {
-if(event.target.classList.contains('js-update-quantity')){
-    const item = event.target
-    const productPID = item.dataset.productId
-    const sub = item.dataset.sub === 'true' ? true : false
-    const data = await updateCartQuantity(productPID, sub)
-    updateCartDynamicButton(data)
-    updateSubTotalInPayment()
-    } 
-    
-    else if(event.target.classList.contains('js-cartitem-delete')){
-        const pid = event.target.dataset.productId
-        const endpoint = `/cart/delete/${pid}/`
-        const response = await makeAPICall(endpoint, 'GET')
-        const data = await response.json()
-        const cartItemElement = document.querySelector(`.js-cart-grid-${pid}`)
-        cartItemElement.remove()
-        const horizontalLine = document.querySelector(`.js-horizontal-line-${pid}`)
-        horizontalLine.remove()
-        const cartContentElement = document.querySelector('.js-cart-content')
-        if(data.cart_count === 0 && cartContentElement){
-            cartContentElement.classList.add('empty-cart-container')
-            cartContentElement.classList.remove('cart-content')
-            cartContentElement.innerHTML = `<p class="cart-empty-text">Your cart is empty</p>`
-        }
+if(cartElement){
+    cartElement.addEventListener('click', async (event) => {
+    if(event.target.classList.contains('js-update-quantity')){
+        const item = event.target
+        const productPID = item.dataset.productId
+        const sub = item.dataset.sub === 'true' ? true : false
+        const data = await updateCartQuantity(productPID, sub)
+        updateCartDynamicButton(data)
         updateSubTotalInPayment()
-        updateCartItemsCount(data.cart_count)
+        } 
+        
+        else if(event.target.classList.contains('js-cartitem-delete')){
+            const pid = event.target.dataset.productId
+            const endpoint = `/cart/delete/${pid}/`
+            const headers = {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookies('csrftoken')
+            }
+            const body = null
+            const response = await makeAPICall(endpoint, 'POST', body, headers)
+            const data = await response.json()
+            const cartItemElement = document.querySelector(`.js-cart-grid-${pid}`)
+            cartItemElement.remove()
+            const horizontalLine = document.querySelector(`.js-horizontal-line-${pid}`)
+            horizontalLine.remove()
+            const cartContentElement = document.querySelector('.js-cart-content')
+            if(data.cart_count === 0 && cartContentElement){
+                cartContentElement.classList.add('empty-cart-container')
+                cartContentElement.classList.remove('cart-content')
+                cartContentElement.innerHTML = `<p class="cart-empty-text">Your cart is empty</p>`
+            }
+            updateSubTotalInPayment()
+            updateCartItemsCount(data.cart_count)
 
-    }
-})
+        }
+    })
+}
 
 updateSubTotalInPayment()
+handleEmptySearch()

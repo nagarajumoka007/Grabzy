@@ -17,5 +17,5 @@ class Order(models.Model):
     oid = ShortUUIDField(prefix="ord", alphabet="123456", max_length=20, length=6, unique=True)
     ordered_at = models.DateTimeField(auto_now_add=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    price = models.DecimalField(max_digits=999999999, decimal_places=2, null=False, blank=False)
+    price = models.DecimalField(max_digits=10, decimal_places=2, null=False, blank=False)
     quantity = models.PositiveSmallIntegerField(default=1, null=False, blank=False)

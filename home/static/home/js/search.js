@@ -1,5 +1,6 @@
 import { updateCartQuantity, 
-    updateAddToCartButtonHtml } from "../../../../static/JavaScript/utils.js"
+    updateAddToCartButtonHtml, 
+    handleEmptySearch} from "../../../../static/JavaScript/utils.js"
 
 
 const searchInputElement = document.querySelector('.js-search-input')
@@ -13,3 +14,5 @@ if(event.target.classList.contains('js-update-quantity')){
     updateAddToCartButtonHtml(data)
     }
 })
+
+handleEmptySearch()

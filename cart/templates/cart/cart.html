@@ -11,7 +11,7 @@
         <div class="cart-content js-cart-content">
             <div class="shopping-cart js-shopping-cart">
                 <div>
-                    <h2>Shopping Cart</h2>
+                    <h4 class="shopping-cart_title">Shopping Cart</h4>
                     <div class="shipping-cart-grid">
                         <div class="shipping-details-section">
                             
@@ -24,45 +24,55 @@
                     <hr class="horizontal-line">
                     {% for item in cart_items %}
                     <div class="shipping-cart-grid js-cart-grid-{{ item.product.pid }}">
+
                         <div class="shipping-details-section js-cart-item">
                             <!-- <input type="checkbox"> -->
                             <img src="{{ item.product.image.url }}" class="cart-item-image" alt="product-image">
+
                             <div class="cart-item-content">
-                                <h3>{{ item.product.name }}</h3>
-                                <p>FREE delivery <strong>Fri, 22 Aug</strong></p>
+                                <p class="cart-product-name">{{ item.product.name }}</p>
+                                <p class="cart-product-delivery-date">FREE delivery <strong>Fri, 22 Aug</strong></p>
+
                                 <div class="cart-additional-options">
+
                                     <div class="cart-dynamic-button js-cart-dynamic-button-{{ item.product.pid }}">
                                         <button class="js-update-quantity" data-product-id = "{{ item.product.pid }}" data-sub="true">-</button>
-                                        <h3 class="js-cart-item-quantity-{{ item.product.pid }}">{{ item.quantity }}</h3>
+                                        <p class="js-cart-item-quantity-{{ item.product.pid }}">{{ item.quantity }}</p>
                                         <button class="js-update-quantity" data-product-id = "{{ item.product.pid }}" data-sub="false">+</button>
                                     </div>
+
                                     <div class="vertical-line"></div>
+
                                     <button class="link-text-cart js-cartitem-delete" data-product-id = "{{ item.product.pid }}">Delete</button>
                                 </div>
+
                             </div>
                             
                         </div>
+
                         <div class="price-section">
-                            <h2>{{ item.product.price|rupee }}</h2>
+                            <p class="bold-text">{{ item.product.price|rupee }}</p>
                         </div>
+
                     </div>
                     <hr class="horizontal-line js-horizontal-line-{{ item.product.pid }}">
                     {% endfor %}
                 </div>
-                <h3 class="subtotal-payment">Subtotal ({{ items_count }} items): <strong>{{ total_amount|rupee }}</strong></h3>
+                <p class="subtotal-payment">Subtotal ({{ items_count }} items): <strong>{{ total_amount|rupee }}</strong></p>
                 
             </div>
 
             <div class="payment">
-                <h3 class="subtotal-payment left-align">Subtotal ({{ items_count }} items): <strong>{{ total_amount|rupee }}</strong></h3>
+                <p class="subtotal-payment left-align">Subtotal ({{ items_count }} items): <strong>{{ total_amount|rupee }}</strong></p>
                 <!-- <div class="cart-payment-gift-checkbox"><input type="checkbox"><p>This order contains a gift</p></div> -->
                 <form action="{% url 'confirm_order' %}" method="post">
                     {% csrf_token %}
                     <button class="proceed-button" type="submit">Proceed to Buy</button>
                 </form>
-                
             </div>
+
         </div>
+        
     {% endif %}
             
 {% endblock %}

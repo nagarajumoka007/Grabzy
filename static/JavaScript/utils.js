@@ -52,7 +52,7 @@ export async function makeAPICall(endpoint, method, body=null, headers={}){
         if(method === "POST"){
             const response = await fetch(endpoint, {
                 method: method,
-                body: body,
+                body: body || "",
                 headers: headers
             })
             return response
@@ -122,4 +122,14 @@ export async function updateCartQuantity(productPID, sub){
         console.log("Exception while calling an API: ", e)
         }
     
+}
+
+export function handleEmptySearch(){
+    const searchElement = document.getElementById("form-search")
+    searchElement.addEventListener("submit", (e) => {
+        const form = new FormData(e.target)
+        if(form.get('search') === ""){
+            e.preventDefault()
+        }
+    })
 }

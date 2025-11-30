@@ -4,10 +4,10 @@
 
 {% block content %}
         <main class="login-card-container">
-            <img src="{% static 'images/grabzy-logo-black.svg' %}" alt="" width= "150px" style="background: transparent;">
+            <a href="{% url 'home' %}"><img src="{% static 'images/grabzy-logo-black.svg' %}" alt="" width= "150px" style="background: transparent;"></a>
             <form class="login-card js-form" method="POST">
                 {% csrf_token %}
-                <h2>Create account</h2>
+                <h4 class="login-card-container_title">Create account</h4>
                 <div class="input-box">
                     <p class="bold-text login-small-text">Your name:</p>
                     <!-- <input type="text" placeholder = "First and last name"> -->
@@ -36,7 +36,7 @@
                     <!-- <button class="login-submit-button">Continue</button> -->
                 </div>
                 <div class="input-box">
-                    <p class="bold-text login-small-text">Password (at least 6 characters):</p>
+                    <p class="bold-text">Password:</p>
                     <!-- <input type="password"> -->
                     {{ u_form.password1 }}
                     {% for error in u_form.password1.errors %}
@@ -58,12 +58,9 @@
                 <div class="horizontal-line"></div>
                 <div>
                     <p id="p-heading">Already a customer?</p>
-                    <a href="#">Sign in instead</a>
+                    <a href="{% url 'user-login' %}">Sign in instead</a>
                 </div>
-                <p class="small-9-px-text">By creating an account or logging in, you agree to Grabzy's <a href="">Consitions of use</a> and <a href="">Privacy policy</a>.</p>
-                
-            </form>
-            
+                            
         </main>
         <div class="horizontal-line"></div>
         <footer class="login-footer">

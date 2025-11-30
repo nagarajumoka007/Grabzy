@@ -43,13 +43,13 @@
             {% endif %}
             <div class="product-rating-section">
                 <p>⭐⭐⭐⭐⭐</p>
-                <p><span>{{ product.rating|floatformat:"-1" }}</span> (2374)</p>
+                <p><span>{{ product.rating|floatformat:"-1" }}</span> • 236 reviews</p>
             </div>
             <hr>
             <p class="product-info">{{ product.description }}</p>
             <hr>
             <div class="technical-spec-section">
-                <h2 class="technical-spec-section_title">Technical Specifications</h2>
+                <h4 class="technical-spec-section_title">Technical Specifications</h4>
                 <ul>
                     {% for f in features %}
                     <li class="technical-spec_feature"><p>{{ f.feature|truncatechars:50 }}</p><p>{{ f.feature_value|truncatechars:50 }}</p></li>

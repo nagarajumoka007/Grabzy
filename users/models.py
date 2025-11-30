@@ -18,18 +18,16 @@ class Profile(models.Model):
     # ])
 
     def __str__(self):
-        return f"{self.user} {self.mobile}"
+        return f"{self.user}"
     
     def save(self, *args, **kwargs):
         try:
-            old = Profile.objects.get(pk = self.pk).profile_pic
-            print("Old", old)
+            old_profile = Profile.objects.get(pk = self.pk)
+            old = old_profile.profile_pic
         except Profile.DoesNotExist:
-            old = None
-        
+            super().save(*args, **kwargs)
+            return
         super().save(*args, **kwargs)
-        print("Old.name", old.name)
-        print("media_url", settings.MEDIA_ROOT)
         if old and old != self.profile_pic and old.name != "profile/default-user.webp":
             path = os.path.join(settings.MEDIA_ROOT, old.name)
             if os.path.exists(path):

@@ -4,9 +4,9 @@
 
 {% block content %}
         <main class="login-card-container">
-            <img src="{% static 'images/grabzy-logo-black.svg' %}" alt="" width= "150px" style="background: transparent;">
+            <a href="{% url 'home' %}"><img src="{% static 'images/grabzy-logo-black.svg' %}" alt="" width= "150px" style="background: transparent;"></a>
             <div class="login-card">
-                <p id="signin-large-text">Sign in or create account</p>
+                <h4 id="signin-large-text" class="login-card-container_title">Sign In</h4>
                 <form class="input-box js-form" method="POST">
                     {% csrf_token %}
                     <div class="input-box">
@@ -22,7 +22,6 @@
                     {% endif %}
                     <button type="submit"  class="login-submit-button">Continue</button>
                 </form>
-                <p class="login-small-text">By continuiung, you agree to Grabzy's <a href="" id="login-small-text" >Conditions of User</a> and <a href="" id="login-small-text">Privacy Notice</a>.</p>
                 <div class="horizontal-line"></div>
                 <p id="p-heading">New user? <a href="{% url 'register' %}">Register</a></p>
                 

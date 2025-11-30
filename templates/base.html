@@ -20,8 +20,7 @@
                 <a class="nav-icons nav-flex grabzy-logo" href="{% url 'home' %}"><img class="grabzy-logo-img" src="{% static 'images/grabzy-log.svg' %}" alt="grabzy-logo"></a>
                 
                 <div class="nav-search">
-                    <form action="{% url 'search' %}" method="get" id="form-search">
-                        {% csrf_token %}
+                    <form action="{% url 'search' %}" method="GET" id="form-search">
                         <input class="search-input js-search-input" type="text" name ="search" placeholder="Search Grabzy">
                         <button class = "search-icon-div js-search" type = 'submit'>
                             <img class="search-icon" src="{% static 'images/search-outline.svg' %}" alt="search-icon">
@@ -61,7 +60,7 @@
 
         <footer>
             <div class="footer-links">
-                <h4 class="footer-links_title">Connect with Me</h4>
+                <p class="footer-links_title">Connect with Me</p>
                 <div class="social-media-links">
                     <a href="https://www.linkedin.com/in/naga-raju-moka-389b37279/" class="social-media-icon"><img src="{% static 'images/logo-linkedin.svg' %}" alt=""></a>
                     <a href="https://github.com/nagarajumoka007" class="social-media-icon"><img src="{% static 'images/logo-github.svg' %}" alt=""></a>

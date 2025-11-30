@@ -16,7 +16,7 @@ class UserRegistrationForm(UserCreationForm):
     )
 
     mobile = forms.CharField(label="Phone", validators = [mobile_validator])
-    email = forms.CharField(validators= [email_validator])
+    email = forms.EmailField(validators= [email_validator])
     class Meta:
         model = User
         fields = ['first_name', 'email', 'password1', 'password2']

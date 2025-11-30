@@ -1,5 +1,9 @@
 import { updateCartQuantity, 
-    updateAddToCartButtonHtml, makeAPICall, updateCartItemsCount } from "../../../../static/JavaScript/utils.js"
+    updateAddToCartButtonHtml, 
+    makeAPICall, 
+    updateCartItemsCount, 
+    getCookies, 
+    handleEmptySearch } from "../../../../static/JavaScript/utils.js"
 
 
 
@@ -13,7 +17,12 @@ if(event.target.classList.contains('js-update-quantity')){
     } else if(event.target.classList.contains('js-buy-now')) {
         const productPid = event.target.dataset.productId
         try{
-            const response = await makeAPICall(`/cart/buy-now/${productPid}/`, 'GET')
+            const headers = {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookies('csrftoken')
+                    }
+            const body = null
+            const response = await makeAPICall(`/cart/buy-now/${productPid}/`, 'POST', body, headers)
             const data = await response.json()
             updateCartItemsCount(data.cart_count)
             window.location.href = "/cart/"
@@ -26,3 +35,5 @@ if(event.target.classList.contains('js-update-quantity')){
         
     }
 })
+
+handleEmptySearch()
